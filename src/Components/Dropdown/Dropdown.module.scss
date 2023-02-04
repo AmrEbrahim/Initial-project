@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.dropdownContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 120px;
+  width: fit-content;
+  user-select: none;
+  .dropdownBtn {
+    background: $primary;
+    color: $txtPrimary;
+    border-radius: $borderRadiusMed;
+    padding: 10px;
+    width: 100%;
+  }
+  .active {
+    background: $primaryDark;
+    border-radius: $borderRadiusMed $borderRadiusMed 0 0;
+  }
+  .selected {
+    background: $primaryLight;
+    color: $txtSelected;
+  }
+  .dropdownList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    background: $primary;
+    color: $txtPrimary;
+    border-radius: 0 0 $borderRadiusMed $borderRadiusMed;
+    overflow: auto;
+    .dropdownItem {
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      &:hover {
+        color: $txtSelected;
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+}

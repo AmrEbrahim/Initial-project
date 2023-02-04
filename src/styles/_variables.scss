@@ -1,0 +1,63 @@
+:root {
+  --primary: #393e46;
+  --primaryLight: #717a88;
+  --primaryDark: #48525c;
+  --secondary: #b9baa3;
+  --secondaryLight: #d6d5c9;
+  --secondaryDark: #a6a78b;
+  --txtPrimary: #fff;
+  --txtSecondary: #000;
+  --txtSelected: #ffa600ea;
+  --scrollBackground: #d6d5c9;
+  --scrollColor: #a6a78b;
+}
+
+[data-theme='dark-theme'] {
+  --primary: #48525c;
+  --primaryLight: #717a88;
+  --primaryDark: #393e46;
+  --secondary: #b9baa3;
+  --secondaryLight: #d6d5c9;
+  --secondaryDark: #a6a78b;
+  --txtSelected: #ffa600ea;
+  --scrollBackground: #d6d5c9;
+  --scrollColor: #a6a78b;
+}
+
+[data-theme='light-theme'] {
+  --primary: #b9baa3;
+  --primaryLight: #d6d5c9;
+  --primaryDark: #a6a78b;
+  --secondary: #48525c;
+  --secondaryLight: #717a88;
+  --secondaryDark: #393e46;
+  --txtPrimary: #000;
+  --txtSecondary: #fff;
+  --txtSelected: #ffa600ea;
+  --scrollBackground: #717a88;
+  --scrollColor: #393e46;
+}
+
+// Colors
+$primary: var(--primary);
+$primaryLight: var(--primaryLight);
+$primaryDark: var(--primaryDark);
+$secondary: var(--secondary);
+$secondaryLight: var(--secondaryLight);
+$secondaryDark: var(--secondaryDark);
+$txtPrimary: var(--txtPrimary);
+$txtSecondary: var(--txtSecondary);
+$txtSelected: var(--txtSelected);
+$scrollBackground: var(--scrollBackground);
+$scrollColor: var(--scrollColor);
+
+// size
+$fontSmall: 14px;
+$fontNormal: 18px;
+$fontMed: 24px;
+$fontBig: 45px;
+$sectionSpace: 3rem;
+$borderRadiusSM: 10px;
+$borderRadiusMed: 20px;
+$borderRadiusBig: 30px;
+$transTime: 0.2s;

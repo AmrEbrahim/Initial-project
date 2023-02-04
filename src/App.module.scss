@@ -1,0 +1,20 @@
+@import './styles/variables';
+
+div {
+  scrollbar-color: $scrollColor $scrollBackground;
+  scrollbar-width: thin;
+}
+
+div::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+div::-webkit-scrollbar-track {
+  background: $scrollBackground; /* color of the tracking area */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: $scrollColor; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid $scrollBackground; /* creates padding around scroll thumb */
+}

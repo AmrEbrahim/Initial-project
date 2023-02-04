@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'aladin';
+  src: url('./Assets/fonts/aladin-v8-latin-regular.eot');
+  src: local('seguisb'), url('./Assets/fonts/acme-v9-latin-regular.woff') format('woff'),
+    url('./Assets/fonts/aladin-v8-latin-regular.ttf') format('truetype'),
+    url('./Assets/fonts/aladin-v8-latin-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: aladin, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
